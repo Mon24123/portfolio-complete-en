@@ -1,0 +1,11 @@
+
+/* English copy keeps the original layout, with room for longer words. */
+html[lang="en"] .hero-copy h1 {font-size:clamp(3rem,5.1vw,5.6rem);line-height:1.06;letter-spacing:-.045em;}
+html[lang="en"] .hero-description {max-width:38rem;}
+html[lang="en"] .project-copy h3 span {font-size:clamp(1.65rem,2.9vw,2.5rem);line-height:1.2;}
+html[lang="en"] .experience-key {font-size:.8rem;}
+html[lang="en"] .evidence-language-note {font-size:.72rem;margin:.5rem 1rem;color:var(--muted,#666);}
+html[lang="en"] .game-poster>strong {font-size:clamp(2rem,3.2vw,3.5rem);}
+@media(max-width:700px){html[lang="en"] .hero-copy h1{font-size:clamp(2.5rem,10vw,4rem);}html[lang="en"] .header nav{gap:.7rem;}html[lang="en"] .hero-meta{line-height:1.7;}html[lang="en"] .project-meta{flex-wrap:wrap;}}
+
+html[lang="en"] .evidence-language-note {color:#e8edff;margin:.4rem 1rem .8rem;}
