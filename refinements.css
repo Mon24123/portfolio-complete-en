@@ -34,7 +34,7 @@ html[lang="en"] .contribution-facts{margin:1.2rem 0;font-size:.9rem;line-height:
 html[lang="en"] .contribution-facts>div{display:block;margin:.75rem 0;}
 html[lang="en"] .contribution-facts dt{font-weight:700;color:inherit;margin-bottom:.25rem;}
 html[lang="en"] .contribution-facts dd{margin:0;color:inherit;opacity:.85;}
-html[lang="en"] .lujian-copy .contribution-facts{max-width:38rem;color:#fff;}
+html[lang="en"] .lujian-copy .contribution-facts{max-width:38rem;color:inherit;}
 html[lang="en"] .footer{flex-wrap:wrap;gap:1rem;}
 :focus-visible{outline:3px solid #527bff;outline-offset:4px;}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important;}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;}}
