@@ -28,3 +28,22 @@ html[lang="en"] .game-poster>strong {font-size:clamp(2rem,3.2vw,3.5rem);}
 @media(max-width:700px){html[lang="en"] .hero-copy h1{font-size:clamp(2.5rem,10vw,4rem);}html[lang="en"] .header nav{gap:.7rem;}html[lang="en"] .hero-meta{line-height:1.7;}html[lang="en"] .project-meta{flex-wrap:wrap;}}
 
 html[lang="en"] .evidence-language-note {color:#e8edff;margin:.4rem 1rem .8rem;}
+
+/* Readable English contribution summaries within the original project layout. */
+html[lang="en"] .contribution-facts{margin:1.2rem 0;font-size:.9rem;line-height:1.6;}
+html[lang="en"] .contribution-facts>div{display:block;margin:.75rem 0;}
+html[lang="en"] .contribution-facts dt{font-weight:700;color:inherit;margin-bottom:.25rem;}
+html[lang="en"] .contribution-facts dd{margin:0;color:inherit;opacity:.85;}
+html[lang="en"] .lujian-copy .contribution-facts{max-width:38rem;color:#fff;}
+html[lang="en"] .footer{flex-wrap:wrap;gap:1rem;}
+:focus-visible{outline:3px solid #527bff;outline-offset:4px;}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important;}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;}}
+.project-brief{max-width:850px;margin:3rem auto;padding:0 24px 4rem;line-height:1.75;}
+.project-brief h1{font-size:clamp(2.2rem,5vw,3.5rem);line-height:1.15;margin:1rem 0 2rem;}
+.project-brief h2{font-size:1.4rem;margin:2rem 0 .7rem;}
+.project-brief figure{margin:1.5rem 0;}
+.project-brief img{max-width:100%;height:auto;border-radius:12px;}
+.project-brief figcaption{font-size:.85rem;opacity:.75;margin-top:.6rem;}
+.brief-actions{display:flex;flex-wrap:wrap;gap:1rem;}
+
+.project-brief figure:nth-of-type(-n+2) img{width:auto;max-height:658px;}
