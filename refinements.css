@@ -23,11 +23,11 @@ html[lang="en"] .hero-copy h1 {font-size:clamp(3rem,5.1vw,5.6rem);line-height:1.
 html[lang="en"] .hero-description {max-width:38rem;}
 html[lang="en"] .project-copy h3 span {font-size:clamp(1.65rem,2.9vw,2.5rem);line-height:1.2;}
 html[lang="en"] .experience-key {font-size:.8rem;}
-html[lang="en"] .evidence-language-note {font-size:.72rem;margin:.5rem 1rem;color:var(--muted,#666);}
+.evidence-language-note {font-size:.72rem;margin:.5rem 1rem;color:var(--muted,#666);}
 html[lang="en"] .game-poster>strong {font-size:clamp(2rem,3.2vw,3.5rem);}
 @media(max-width:700px){html[lang="en"] .hero-copy h1{font-size:clamp(2.5rem,10vw,4rem);}html[lang="en"] .header nav{gap:.7rem;}html[lang="en"] .hero-meta{line-height:1.7;}html[lang="en"] .project-meta{flex-wrap:wrap;}}
 
-html[lang="en"] .evidence-language-note {color:#e8edff;margin:.4rem 1rem .8rem;}
+.evidence-language-note {color:#e8edff;margin:.4rem 1rem .8rem;}
 
 /* Readable English contribution summaries within the original project layout. */
 .contribution-facts{margin:1.2rem 0;font-size:.9rem;line-height:1.6;}
@@ -35,7 +35,7 @@ html[lang="en"] .evidence-language-note {color:#e8edff;margin:.4rem 1rem .8rem;}
 .contribution-facts dt{font-weight:700;color:inherit;margin-bottom:.25rem;}
 .contribution-facts dd{margin:0;color:inherit;opacity:.85;}
 .lujian-copy .contribution-facts{max-width:38rem;color:inherit;}
-html[lang="en"] .footer{flex-wrap:wrap;gap:1rem;}
+.footer{flex-wrap:wrap;gap:1rem;}
 :focus-visible{outline:3px solid #527bff;outline-offset:4px;}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important;}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;}}
 .project-brief{max-width:850px;margin:3rem auto;padding:0 24px 4rem;line-height:1.75;}

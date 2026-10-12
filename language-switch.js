@@ -6,7 +6,8 @@ const portfolioLanguages = [{"attrs": {"content": {"zh": "毛雨晴的作品集�
   const bindings = portfolioLanguages.map(record => ({record, element:document.querySelector(`[data-i18n="${record.id}"]`)}));
   function apply(next, preservePosition = true) {
     const candidates = [...document.querySelectorAll('section[id], article[id], footer')];
-    const anchor = candidates.filter(el => el.getBoundingClientRect().top <= innerHeight / 3 && el.getBoundingClientRect().bottom > 0).at(-1);
+    const footer = document.querySelector('footer');
+    const anchor = footer && footer.getBoundingClientRect().top < innerHeight ? footer : candidates.filter(el => el.getBoundingClientRect().top <= innerHeight / 3 && el.getBoundingClientRect().bottom > 0).at(-1);
     const before = anchor?.getBoundingClientRect().top;
     language = next; root.lang = next === 'zh' ? 'zh-CN' : 'en';
     bindings.forEach(({record,element}) => {
@@ -27,7 +28,7 @@ const portfolioLanguages = [{"attrs": {"content": {"zh": "毛雨晴的作品集�
       const trigger = [...document.querySelectorAll('[data-image]')].find(el => el.dataset.image === expanded.getAttribute('src'));
       if (trigger) { expanded.alt = trigger.dataset.caption || trigger.querySelector('img')?.alt || ''; document.getElementById('image-caption').textContent = expanded.alt; }
     }
-    if (preservePosition && anchor) window.scrollBy(0,anchor.getBoundingClientRect().top - before);
+    if (preservePosition && anchor) window.scrollBy({top:anchor.getBoundingClientRect().top - before,behavior:'instant'});
   }
   controls.forEach(button => button.addEventListener('click', () => apply(language === 'en' ? 'zh' : 'en')));
   apply(language, false);
