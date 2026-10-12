@@ -30,11 +30,11 @@ html[lang="en"] .game-poster>strong {font-size:clamp(2rem,3.2vw,3.5rem);}
 html[lang="en"] .evidence-language-note {color:#e8edff;margin:.4rem 1rem .8rem;}
 
 /* Readable English contribution summaries within the original project layout. */
-html[lang="en"] .contribution-facts{margin:1.2rem 0;font-size:.9rem;line-height:1.6;}
-html[lang="en"] .contribution-facts>div{display:block;margin:.75rem 0;}
-html[lang="en"] .contribution-facts dt{font-weight:700;color:inherit;margin-bottom:.25rem;}
-html[lang="en"] .contribution-facts dd{margin:0;color:inherit;opacity:.85;}
-html[lang="en"] .lujian-copy .contribution-facts{max-width:38rem;color:inherit;}
+.contribution-facts{margin:1.2rem 0;font-size:.9rem;line-height:1.6;}
+.contribution-facts>div{display:block;margin:.75rem 0;}
+.contribution-facts dt{font-weight:700;color:inherit;margin-bottom:.25rem;}
+.contribution-facts dd{margin:0;color:inherit;opacity:.85;}
+.lujian-copy .contribution-facts{max-width:38rem;color:inherit;}
 html[lang="en"] .footer{flex-wrap:wrap;gap:1rem;}
 :focus-visible{outline:3px solid #527bff;outline-offset:4px;}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important;}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;}}
@@ -47,3 +47,8 @@ html[lang="en"] .footer{flex-wrap:wrap;gap:1rem;}
 .brief-actions{display:flex;flex-wrap:wrap;gap:1rem;}
 
 .project-brief figure:nth-of-type(-n+2) img{width:auto;max-height:658px;}
+
+/* Instant language control, visible on desktop and touch screens. */
+.header .language-switch{flex-shrink:0;min-width:44px;min-height:44px;font:inherit;font-weight:700;cursor:pointer;}
+.language-switch{color:inherit;background:transparent;border:0;cursor:pointer;}
+@media(max-width:700px){.header{gap:12px;}.header .language-switch{margin-left:auto;}.header .nav-contact{margin-left:0;}}
